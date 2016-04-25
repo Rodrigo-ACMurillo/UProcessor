@@ -113,6 +113,18 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="39"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="39"/>
     </file>
+    <file xil_pn:name="PSR_tb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="29"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="29"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="29"/>
+    </file>
+    <file xil_pn:name="PSRM_tb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="33"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="33"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="33"/>
+    </file>
   </files>
 
   <properties>

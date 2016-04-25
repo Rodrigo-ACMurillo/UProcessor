@@ -41,11 +41,11 @@ architecture arqUProcessor of PSR is
 begin
 	process(clk,rst,nzvc)
 		begin
-			if (rising_edge(clk))then
 				if(rst='0') then
 					c <= '0';
 				else
-					c <= nzvc(3);
+					if (rising_edge(clk))then
+						c <= nzvc(0);
 				end if;
 			end if;
 	end process;
