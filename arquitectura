@@ -1,0 +1,15 @@
+Windows manager: solución 5bits para redireccionar a register file de 40bits. Salida de 6bits para 
+				 redireccionar 40bits. 
+				 //Para registros Locales
+					 +Mirar si está entre 16 y 23
+					 nsr1 <= rs1 + (cwp*16);
+				 //Para registros Globales
+					+Concatenación
+				 //Para registros de entrada
+					nsr1 <= rs1 - (cwp*16);
+				 
+CWP: preguntar ventana 0 o 1. Sale del PSR. Modificado por Save and Restore. 
+	 r[rd] = r[rs1] + r[rs2] o r[rs1] + seu(imm13)
+
+Op2 a la unidad de control
+	 
