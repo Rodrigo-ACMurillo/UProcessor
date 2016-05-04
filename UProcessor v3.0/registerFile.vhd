@@ -54,7 +54,7 @@ begin
 			if(reset = '0')then
 				contentRegisterSource1 <= (others=>'0');
 				contentRegisterSource2 <= (others=>'0');
-				--registers <= (others => x"00000000");
+				registers <= (others => x"00000000");
 			else
 				contentRegisterSource1 <= registers(conv_integer(registerSource1));
 				contentRegisterSource2 <= registers(conv_integer(registerSource2));

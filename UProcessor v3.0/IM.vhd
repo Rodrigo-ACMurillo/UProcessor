@@ -56,7 +56,7 @@ architecture arqUProcessor of IM is
 		return temp_mem;
 	end function;
 	
-	signal instructions : rom_type := InitRomFromFile("memoria.data");
+	signal instructions : rom_type := InitRomFromFile("Prueba.txt");
 begin
 	process(rst,address, instructions)--clk)
 	begin

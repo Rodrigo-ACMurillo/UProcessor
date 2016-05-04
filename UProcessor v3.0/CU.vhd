@@ -50,6 +50,20 @@ begin
 					when "000011" => opALU <= "000011"; --Xor
 					when "000111" => opALU <= "000111"; --Xnor
 					when "000101" => opALU <= "000101"; --AndN
+					--Instrucciones ..cc
+					when "001001" => opALU <= "001001"; --Addcc
+					when "001100" => opALU <= "001100"; --Subcc
+					when "001111" => opALU <= "001111"; --Andcc*
+					when "010001" => opALU <= "010001"; --Orcc*
+					when "010010" => opALU <= "010010"; --OrNcc*
+					when "010110" => opALU <= "010110"; --Xorcc*
+					when "010100" => opALU <= "010100"; --Xnorcc*
+					when "010000" => opALU <= "010000"; --Nandcc*
+					--Instrucciones ..x[cc]?
+					when "001010" => opALU <= "001010"; --Addx
+					when "001011" => opALU <= "001011"; --Addxcc
+					when "001101" => opALU <= "001101"; --Subx
+					when "001110" => opALU <= "001110"; --Subxcc
 					when others   => opALU <= "111111"; --Otros valores
 				end case;
 			end if;

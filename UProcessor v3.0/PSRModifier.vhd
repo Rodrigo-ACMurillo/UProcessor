@@ -42,7 +42,7 @@ begin
 					nzvc(0) <= ((not Op1) and Op2) or (Aluresult(31) and ((not Op1) or Op2));
 					
 				else
-					if(Aluop = "001111" or Aluop = "010000" or Aluop = "010001" or Aluop = "010010" or Aluop = "010011" or Aluop = "010100")then
+					if(Aluop = "001111" or Aluop = "010000" or Aluop = "010001" or Aluop = "010010" or Aluop = "010110" or Aluop = "010100")then
 						nzvc(3) <= Aluresult(31);	
 						if(Aluresult = x"00000000")then
 							nzvc(2) <= '1';
